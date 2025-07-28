@@ -1,0 +1,24 @@
+package arrayType;
+import java.util.*;
+public class Array2DEc2 {
+
+	public static void main(String[] args) {
+		// 2차원 배열을 통해 영단어 맞히기
+		
+		String quiz[][] = {{"chair","의자"},
+							{"computer","컴퓨터"},
+							{"integer","정수"}};
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Q1.chair의 뜻은?");
+		String chair = sc.next();
+		if(chair == quiz[1][0]) {
+			System.out.println("정답입니다");
+		}else {
+			System.out.println("틀렸습니다. 정답은 "+quiz[0][1]+"입니다.");
+			
+		}
+
+	}
+
+}

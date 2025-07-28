@@ -1,0 +1,14 @@
+package randomEx;
+
+public class RandomNum1 {
+
+	public static void main(String[] args) {
+		// 랜던숫자 생성 - 1.Math.random();
+		for(int i = 1;i<=10;i++) {
+			double num = Math.random();
+			System.out.println(num);
+		}
+
+	}
+
+}

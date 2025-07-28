@@ -1,0 +1,12 @@
+package arrayType;
+
+public class ArrayClone {
+
+	public static void main(String[] args) {
+		// Object.clone() 메소
+		int[] a = {1,2,3,4};
+		int[] b = a.clone();
+
+	}
+
+}

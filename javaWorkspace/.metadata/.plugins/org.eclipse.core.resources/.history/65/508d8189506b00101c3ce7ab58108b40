@@ -1,0 +1,18 @@
+package Package2;
+
+public class WhileEx {
+
+	public static void main(String[] args) {
+		// 사용자가 숫자 7을 입력할 때까지 계속 입력받는 예제
+		Scanner sc = new Scanner(System.in);
+		int i = sc.nextInt();
+		
+		i=0;
+		
+		while(i <= 7) {
+			System.out.println(i);
+			i++;
+		}
+	}
+
+}

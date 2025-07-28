@@ -1,0 +1,26 @@
+package Package2;
+
+public class Control {
+
+	public static void main(String[] args) {
+		// 제어문 반복문 : 프로그램의 흐름은 위에서 아래로 진행이 됨 -> 방향을 바꾸는 역할
+		// if문
+		int score = 85;
+		String grade;
+		if(score >=90) {
+			if(score >= 95) {
+				grade = "A+";
+			}else {
+				grade = "A0";
+			}
+		}else {
+			if(score >= 85) {
+				grade = "B+";
+			}else {
+				grade = "B0";
+			}
+		}
+
+	}
+
+}
