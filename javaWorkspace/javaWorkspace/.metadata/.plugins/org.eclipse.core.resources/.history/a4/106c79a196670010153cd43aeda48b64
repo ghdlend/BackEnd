@@ -1,0 +1,95 @@
+package Package2;
+
+public class Operators {
+
+	public static void main(String[] args) {
+		// 자바 연산자
+		short a= 100;
+		short b = -100;
+		
+		//short result = -a; //short type 변수 a에 부호연사
+		//-를 적용하면 반환타입은 int -> short에 저장
+		
+		//증감연산자 ++-- : 변수의 값 1증가 또는 감소
+		int x = 10;
+		x++;
+		System.out.println(x);
+		++x;
+		System.out.println(x);
+		
+		//연산식에 증감연산과 다른 연산이 같이 있는경우
+		int x1 = 10;
+		int y1 = 10;
+		
+		y1 = x1++; //++가 대입연사 이후로 밀림 x1의 값을 먼저 y1에 대입 후 x1의 1 증가
+		System.out.println(y1);
+		y1 = ++x1; //11인 x1을 먼저 증가시키고(12가 됨) y1에 대입 -> y1은 12가 대입
+		System.out.println(y1);
+		
+		x =1;
+		int y =1;
+		
+		System.out.println(++x + 10); //x를 증가시켜서 10을 더함 -> 12
+		System.out.println(y++ + 10); //y를 10과 더한 후에 y 값을 1 증가시킴
+		System.out.println(y);   //위에 1이 증가 되어서 2로 출력
+		
+		//이항 연산자 : + - * / %
+		//주의 : 연산 결과 오버플로우 발생 가능 : 연산 결과값이 너무 커서 제대로 저장이 일어나지 않은 경우
+		int x2 = 1000000;
+		int y2 = 1000000;
+		
+		int z2 = x2*y2; //조 단위 -> x2*y2의 결과가 int형 반환(overflow)
+		System.out.println(z2);
+		//-727379968 오버플로우 발생하면서 뒤에서부터 
+		//1조를 저장하다가 공간이 부족하면 저장하지 않음
+		//부호비트의 값에 0이 들어가 음수의 값이 나옴
+		
+		long x3 = 1000000;
+		long y3 = 1000000;
+		
+		long z3 =  x3  * y3;
+		System.out.println(z3); 
+		//피연산자 단위가 크면 결과 저장할 변수의 타입을 long type 사용
+		
+		// / 연산
+		// 점수 0 또는 실수 0.0으로 나누는 경우 - 예외발생하거나 Infinity 출력
+		//System.out.println(10/0); //예외 발생시 아래 코드 발생 x 프로그램 종료
+		System.out.println(10/0.0); //Infinity
+		
+		// / 연산
+		// 점수 0 또는 실수 0.0으로 나누는 경우 - 예외발생하거나 NaN 출력
+		//System.out.println(10%0); // / by zero 프로그램 종료
+		System.out.println(10%0.0); //NaN(Not a Number)
+		
+		// + 문자열 연결 연산
+		String city = "서울시";
+		String gu = "강남구";
+		System.out.println(city + gu);
+		
+		//비교 연산자 : == != -> boolean type 반환
+		System.out.println(x2 == y2);
+		System.out.println(x2 != y2);
+		
+		//문자열 비교 - 문자열 변수는 참조변수이므로 참조값(주소)을 저장하고 있음
+		//			  변수가 참조하는 주소의 여부를 묻게 됨
+		System.out.println(city == gu); //city의 값과 gu의 값이 같은지의 여부를 판단하지 않음
+		System.out.println(city != gu); //city의 값과 gu의 값이 다른지의 여부를 판단하지 않음
+		
+		//값이 같게 나오지만 값의 주소값을 비교해 true가 나오지 않음
+		String name1 = "홍길동";
+		String name2 = "홍길동";
+		System.out.println(name1 == name2);
+		System.out.println(name1 != name2);
+		
+		//문자열을 비교하는 메서드
+		System.out.println(name1.equals(name2));
+	
+		//논리 연산자 : && || ! ^(xor) 연산 가능 -> boolean 형태의 결과값
+		
+		//비트 논리 연산자 : & | ~ ^
+		//45 -> 00101101 25 ->00011001
+		System.out.println(45 & 25);
+		//비트 산술 연산자 : >> <<
+	}
+
+}

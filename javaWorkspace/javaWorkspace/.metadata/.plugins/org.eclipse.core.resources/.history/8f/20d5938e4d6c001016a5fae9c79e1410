@@ -1,0 +1,18 @@
+package oopClass.sec07;
+
+public class Constructor {
+	//멤버변수
+	private int x;
+	private int y;
+	
+	//생성자 : 클래스 이름과 동일한 메서드, 반환타입 없음
+	//객체 생성될 때 한 번만 호출 가능
+	//생성자 역할 : 멤버변수 값 초기화
+	//명시적 생성자가 구현되었으므로 default 생성자(컴파일러가 생성한는)는 구현하지 않는다.
+	public Constructor() {
+		x = 100;
+	}
+	public void show() {
+		System.out.println("x : "+x);
+	}
+}

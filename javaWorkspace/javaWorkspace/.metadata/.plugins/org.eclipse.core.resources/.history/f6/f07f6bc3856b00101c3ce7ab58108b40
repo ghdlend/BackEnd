@@ -1,0 +1,27 @@
+
+public class ArrayDelete {
+
+	public static void main(String[] args) {
+		// ArrayDelete
+		int[] num = {1,2,3,4,5};
+		//num의 원소값을 유지하고 크기는 10인 배열이 필요해짐
+		int[] newNum = new int[10];
+		
+		//num 원소값 newNum에 저장
+		for(int i = 0; i<num.length;i++) {
+			newNum[i] = num[i];
+		}
+		
+		//newNum 출력
+		for(int i = 0; i < newNum.length;i++) {
+			System.out.println(newNum[i]);
+		}
+		
+		//num 출력 : num과 newNum은 다른 객체 참조
+		for(int i = 0; i < Num.length;i++) {
+			System.out.println(Num[i]);
+		}
+
+	}
+
+}

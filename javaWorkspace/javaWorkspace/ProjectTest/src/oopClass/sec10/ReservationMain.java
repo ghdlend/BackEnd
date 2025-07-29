@@ -1,0 +1,12 @@
+package oopClass.sec10;
+
+public class ReservationMain {
+
+	public static void main(String[] args) {
+		// 항공권 예약 정보
+		Reservation R = new Reservation("KE1001","홍길동","인천","뉴욕",1600000,"A38");
+		System.out.println("**항공권 예약 정보**");
+		R.showRsvInfo();
+	}
+
+}

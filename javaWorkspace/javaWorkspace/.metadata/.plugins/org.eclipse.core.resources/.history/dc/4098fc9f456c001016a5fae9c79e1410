@@ -1,0 +1,17 @@
+package oopClass.sec05;
+
+public class TvMain {
+
+	public static void main(String[] args) {
+		// 객체 배열 생성
+		Tv[] tvArr = new Tv[3]; //길이가 3인 Tv 객체 배열
+		for(int i = 0; i < tvArr.length; i++) {
+			tvArr[i] = new Tv();
+			
+			
+		}
+		
+
+	}
+
+}

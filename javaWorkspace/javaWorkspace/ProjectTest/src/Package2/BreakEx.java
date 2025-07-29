@@ -1,0 +1,24 @@
+package Package2;
+import java.util.Scanner;
+public class BreakEx {
+
+	public static void main(String[] args) {
+		// 현재 잔액 100,000 인출을 while 문으로 수행 하고 잔액이 부족하면 
+		//프로그램 종료하고 현재 잔액 출력
+		int balance = 100000;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("현재 잔액:"+balance);
+		while(true) {
+			System.out.print("입출액 입력 :");
+			int withdrawal = sc.nextInt();
+			if(withdrawal > balance) {
+				System.out.println("현재 잔액이 부족합니다");
+				break;
+			}
+			balance -= withdrawal;
+		}
+		System.out.println("최종 잔액 :" + balance);
+		sc.close();	
+	}
+
+}

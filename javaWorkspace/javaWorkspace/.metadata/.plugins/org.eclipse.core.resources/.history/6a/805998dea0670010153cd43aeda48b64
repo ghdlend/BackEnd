@@ -1,0 +1,15 @@
+package Package2;
+
+public class Reap {
+
+	public static void main(String[] args) {
+		// for : 반복 횟수를 알고 있을 때 주로 사용
+		int sum = 0;
+		for(int i=1;i<=10;i++) {
+			System.out.println(i);
+			sum += i;
+		}
+		System.out.println(sum);
+	}
+
+}

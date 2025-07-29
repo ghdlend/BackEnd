@@ -1,0 +1,19 @@
+package oopClass.sec02;
+
+public class RectangleMain {
+
+	public static void main(String[] args) {
+		// 사각형 면적 계산
+		Rectangle rec = new Rectangle();
+		
+		rec.input();
+		rec.area();
+		
+		Rectangle rec1 = new Rectangle();
+		//멤버필드 접근제한자 생략되어 있음
+		rec1.width = 100;
+		rec1.height = 200;
+		rec.area();
+	}
+
+}

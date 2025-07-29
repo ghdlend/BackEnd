@@ -1,0 +1,14 @@
+package oopClass.sec04;
+
+public class ProductMain {
+	
+	public static void main(String[] args) {
+		// 상품정보를 입력받아 매출액과 재고액 계산
+		Product p = new Product();
+		System.out.println("*****상품 정보 입력*****");
+		p.inputPrdInfo();
+		p.showPrdInfo();
+		
+	}
+
+}

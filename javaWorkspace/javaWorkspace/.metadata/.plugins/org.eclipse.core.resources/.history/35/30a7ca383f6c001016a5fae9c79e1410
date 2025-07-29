@@ -1,0 +1,37 @@
+package oopClass.sec04;
+import java.util.*;
+
+public class Product {
+	String prdName;
+	int prdPrice;
+	int prdSold;
+	int prdStock;
+	
+	Scanner sc = new Scanner(System.in);
+	
+	void inputPrdInfo() {
+		System.out.printf("상품명 : ");
+		prdName = sc.next();
+	}
+	
+	void showPrdInfo() {
+		System.out.printf("가격 : ");
+		prdPrice = sc.nextInt();
+		System.out.printf("판매 수량 : ");
+		prdSold = sc.nextInt();
+		System.out.printf("재고 수량 : ");
+		prdStock= sc.nextInt();
+	}
+	
+	void showSalesAmount() {
+		System.out.println("매출액 : "+(prdPrice*prdSold));
+	}
+	void showStockAmount() {
+		System.out.println("재고액 : "+(prdPrice * prdStock));
+	}
+	
+	
+	
+	
+	
+}

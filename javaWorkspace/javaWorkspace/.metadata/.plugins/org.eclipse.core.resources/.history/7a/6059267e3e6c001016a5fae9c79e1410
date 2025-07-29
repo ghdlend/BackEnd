@@ -1,0 +1,26 @@
+package oopClass.sec04;
+import java.util.*;
+
+public class Product {
+	String prdName;
+	int prdPrice;
+	int prdSold;
+	int prdStock;
+	
+	Scanner sc = new Scanner(System.in);
+	
+	void inputPrdInfo() {
+		System.out.printf("상품명 : ");
+		prdName = sc.next();
+	}
+	
+	void showPrdInfo() {
+		System.out.printf("가격 : ");
+		prdPrice = sc.nextInt();
+	}
+	
+	
+	
+	
+	
+}

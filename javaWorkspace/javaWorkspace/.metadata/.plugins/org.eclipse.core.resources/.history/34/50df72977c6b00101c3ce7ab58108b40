@@ -1,0 +1,27 @@
+package arrayType;
+import java.util.*;
+public class ArrayInputEx1 {
+
+	public static void main(String[] args) {
+		// 숫자를 입력받아 입력 받은 값을 출력하고 최대값을 보여주는 것
+		Scanner sc = new Scanner(System.in);
+		
+		int array[] = new int[4];
+		
+		for(int i = 0;i < array.length;i++) {
+			System.out.printf("num[%d] : ",i);
+			array[i] = sc.nextInt();
+		}
+		System.out.println("입력된 값 : "+Arrays.toString(array));
+		
+		int max = array[0];
+		for(int i = 1;i <array.length;i++) {
+			if(max < array[i]) {
+				max = array[i];
+			}
+		}
+		System.out.println("최대값" + max);
+
+	}
+
+}

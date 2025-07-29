@@ -1,0 +1,23 @@
+package oopClass.sec10;
+
+public class Reservation {
+	String airplane;
+	String name;
+	String start;
+	String end;
+	int price;
+	String sitNum;
+	
+	public Reservation(String a,String n,String s,String e,int p,String sn){
+		airplane = a;
+		name = n;
+		start = s;
+		end = e;
+		price = p;
+		sitNum = sn;
+	}
+	
+	public showRsvInfo() {
+		
+	}
+}
